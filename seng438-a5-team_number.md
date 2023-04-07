@@ -45,8 +45,7 @@ One option is to use the Laplace test to find the appropriate range of data for 
 However, the C-SFRAT tool does not have the ability to conduct range analysis using Laplace or other tests. Therefore, we estimated the region that should be covered on the basis that this region was for a single version of the program. This is because when a program gets updated, there is usually a spike in failures, skewing the reliability analysis.
 
 ### Plots for the Test Data Provided
-
-The following graphs show our the Intensity graphs for the Geometric and S Distribution model (S) modeled against the E, F, C covariates. We use the covariates as they are variables in our experiments that may be considered nuisances, but should not be ignored. 
+The following graphs show the Intensity graphs for the Geometric and S Distribution model (S) modeled against the E, F, C covariates. We use the covariates as they are variables in our experiments that may correlate to the failure occurrences.  
 
 <img src="./media/Intensitygraph1.png" width="500" />
 
