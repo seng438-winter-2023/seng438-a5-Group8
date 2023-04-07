@@ -28,37 +28,27 @@ As the report format provided did not match the C-SFRAT style, we need to conver
 <img src="./media/FailireReport2.png" width="500" />
 
 We then tried fitting the model with different types of hazard functions; IFR Salvia & Bollinger, S Distribution, Discrete Weibull (Order 2), Geometric, Negative Binomial, and Truncated Logistic each to all the possible Covariates:
+<img src="./media/ModelFitting.png" width="500" />
 
 After inspecting the best fit, we figured that the Geometic and the Truncated Logistic both works really well.
-
-
-
-
-
-
+<img src="./media/BestFit.png" width="500" />
 
 This also came clear by looking at the Model Comparison tab and sorting by median, comparing the top two models that provide the best fit for the projet. The table below shows Geometric and S Distribution model (S) having the critic (Median) value being closest to 1.
-
- . . .
-
-
-
-
+<img src="./media/ModelComparison.png" width="500" />
 
 ### Result of Range Analysis
 
 It’s common to have a large amount of data collected from testing, but not all of it will be useful. By conducting range analysis we can include only the regions of failure date that are relevant to our range analysis.
 
-One option is to use the Laplace test to find the appropriate range of data for analysis. It works by calculating the difference between the observed failure data and the expected failure data based on a particular model. Thus, we would be able to find the data points that are outside the expected range and should be excluded. (explanation of Laplace came from chatGPT but i don’t think this matches the notes, rewrite this if it’s wrong)
+One option is to use the Laplace test to find the appropriate range of data for analysis. It works by calculating the difference between the observed failure data and the expected failure data based on a particular model. Thus, we would be able to find the data points that are outside the expected range and should be excluded.
 
 However, the C-SFRAT tool does not have the ability to conduct range analysis using Laplace or other tests. Therefore, we estimated the region that should be covered on the basis that this region was for a single version of the program. This is because when a program gets updated, there is usually a spike in failures, skewing the reliability analysis.
 
 ### Plots for the Test Data Provided
 
 The following graphs show our the Intensity graphs for the Geometric and S Distribution model (S) modeled against the E, F, C covariates. We use the covariates as they are variables in our experiments that may be considered nuisances, but should not be ignored. 
-
-
-
+<img src="./media/IntensityGraph1.png" width="500" />
+<img src="./media/IntensityGraph2.png" width="500" />
 
 ### Decision Making Given a Target Failure Rate
 
@@ -71,9 +61,10 @@ If the actual failure rate is already below the target failure rate, then the sy
 ### Predictions
 
 A really nice feature of C-SFRAT is being able to create predictions. This can be done by inputting a Failure Intensity Target in the input box on the left of Model Results and Predictions tab. For our purpose, we input 1, and as you can see in the figure above, C-SFRAT predicts that it will take about 22 intervals to reach our goal using the Geometric model. 
-
+<img src="./media/Predictions.png" width="500" />
 
 The graph below shows the same prediction without any covariates. This however, should be recognized as less accurate as we should not assume experiments without these covariates. 
+<img src="./media/Predictions2.png" width="500" />
 
 ### Advantages and Disadvantages of Reliability Growth Analysis
 
@@ -95,16 +86,13 @@ Disadvantages:
 The following failure data plots come from “Failure Report 2.docx”. Because we could not figure out how to expand the chart past 16 failures, we find the MTTFmin considering just the first 16 failures. We found MTTFmin as the lowest MTTF where the last failure point in the failure graph line is in the accept region, which is 785.
 
 Failure data plot with minimum MTTFmin for which the SUT becomes acceptable (MTTF = 785 seconds):
-
-
+<img src="./media/RDC.png" width="500" />
 
 Failure data with MTTFmin halved (392.5 seconds):
-
-
-
+<img src="./media/RDC2.png" width="500" />
 
 Failure data with  MTTFmin doubled (1570 seconds):
-
+<img src="./media/RDC3.png" width="500" />
 
 ### Evaluation and Justification of chosen MTTFmin
 
