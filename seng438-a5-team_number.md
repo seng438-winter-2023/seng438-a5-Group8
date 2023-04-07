@@ -30,7 +30,7 @@ As the report format provided did not match the C-SFRAT style, we need to conver
 We then tried fitting the model with different types of hazard functions; IFR Salvia & Bollinger, S Distribution, Discrete Weibull (Order 2), Geometric, Negative Binomial, and Truncated Logistic each to all the possible Covariates:
 <img src="./media/ModelFitting.png" width="500" />
 
-After inspecting the best fit, we figured that the Geometic and the Truncated Logistic both works really well.
+After inspecting the best fit, we determined that the Geometric and the Truncated Logistic model the failure data most accurately.
 <img src="./media/BestFit.png" width="500" />
 
 This also came clear by looking at the Model Comparison tab and sorting by median, comparing the top two models that provide the best fit for the projet. The table below shows Geometric and S Distribution model (S) having the critic (Median) value being closest to 1.
