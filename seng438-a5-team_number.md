@@ -47,7 +47,7 @@ However, the C-SFRAT tool does not have the ability to conduct range analysis us
 ### Plots for the Test Data Provided
 
 The following graphs show our the Intensity graphs for the Geometric and S Distribution model (S) modeled against the E, F, C covariates. We use the covariates as they are variables in our experiments that may be considered nuisances, but should not be ignored. 
-<img src="./media/IntensityGraph1.png" width="500" />
+<img src="./media/Intensitygraph1.png" width="500" />
 <img src="./media/IntensityGraph2.png" width="500" />
 
 ### Decision Making Given a Target Failure Rate
