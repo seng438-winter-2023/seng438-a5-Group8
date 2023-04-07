@@ -25,7 +25,7 @@ We practice the first using SRTAT and the second using RDC.
 #### Creating a failure report from Failure Report 2
 
 As the report format provided did not match the C-SFRAT style, we need to convert it to a xlsl file with the correct table format. In particular since the doc file had a Time Since Last Failure section, we figured that we could take an arbitrary interval such as 2500 seconds and count the amount of errors for the FC: failure count table column. The converted xlsl table result is shown below: 
-<img src="./media/FailureReport2.png" width="700" />
+<img src="./media/FailireReport2.png" width="700" />
 
 We then tried fitting the model with different types of hazard functions; IFR Salvia & Bollinger, S Distribution, Discrete Weibull (Order 2), Geometric, Negative Binomial, and Truncated Logistic each to all the possible Covariates:
 
