@@ -63,9 +63,11 @@ If the actual failure rate is already below the target failure rate, then the sy
 
 A really nice feature of C-SFRAT is being able to create predictions. This can be done by inputting a Failure Intensity Target in the input box on the left of Model Results and Predictions tab. For our purpose, we input 1, and as you can see in the figure above, C-SFRAT predicts that it will take about 22 intervals to reach our goal using the Geometric model. 
 
+
 <img src="./media/Predictions.png" width="500" />
 
 The graph below shows the same prediction without any covariates. This however, should be recognized as less accurate as we should not assume experiments without these covariates. 
+
 
 <img src="./media/Predictions2.png" width="500" />
 
