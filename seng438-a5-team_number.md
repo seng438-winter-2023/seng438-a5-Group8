@@ -62,9 +62,11 @@ If the actual failure rate is already below the target failure rate, then the sy
 ### Predictions
 
 A really nice feature of C-SFRAT is being able to create predictions. This can be done by inputting a Failure Intensity Target in the input box on the left of Model Results and Predictions tab. For our purpose, we input 1, and as you can see in the figure above, C-SFRAT predicts that it will take about 22 intervals to reach our goal using the Geometric model. 
+
 <img src="./media/Predictions.png" width="500" />
 
 The graph below shows the same prediction without any covariates. This however, should be recognized as less accurate as we should not assume experiments without these covariates. 
+
 <img src="./media/Predictions2.png" width="500" />
 
 ### Advantages and Disadvantages of Reliability Growth Analysis
@@ -87,12 +89,15 @@ Disadvantages:
 The following failure data plots come from “Failure Report 2.docx”. Because we could not figure out how to expand the chart past 16 failures, we find the MTTFmin considering just the first 16 failures. We found MTTFmin as the lowest MTTF where the last failure point in the failure graph line is in the accept region, which is 785.
 
 Failure data plot with minimum MTTFmin for which the SUT becomes acceptable (MTTF = 785 seconds):
+
 <img src="./media/RDC.png" width="500" />
 
 Failure data with MTTFmin halved (392.5 seconds):
+
 <img src="./media/RDC2.png" width="500" />
 
 Failure data with  MTTFmin doubled (1570 seconds):
+
 <img src="./media/RDC3.png" width="500" />
 
 ### Evaluation and Justification of chosen MTTFmin
